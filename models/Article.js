@@ -5,7 +5,8 @@ const Schema = mongoose.Schema;
 
 // Using the Schema constructor, create a new UserSchema object
 const ArticleSchema = new Schema({
-  // `Title is required and of type String
+  
+  // `title is required and of type String
   title: {
     type: String,
     required: true
