@@ -23,7 +23,7 @@ $(document).on("click", "p", function() {
   // Now make an ajax call for the Article
   $.ajax({
     method: "GET",
-    url: "/articles" + thisId
+    url: "/articles/" + thisId
   })
   // With that done, add the note information to the page
   .then(function(data) {
@@ -54,7 +54,7 @@ $(document).on("click", "p", function() {
 });
 
 // When you click the savenote button
-$(document).on("click", "savenote", function() {
+$(document).on("click", "#savenote", function() {
 
   // Grab the id associated with the article from the submit button
   const thisId = $(this).attr("data-id");
